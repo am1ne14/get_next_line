@@ -1,8 +1,0 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Vestibulum at odio et nulla facilisis pharetra.
-Nulla facilisi. Donec sed metus ac metus convallis laoreet.
-1234567890!@#$%^&*()_+[]{}|;:',.<>?/~`"\n
-This is a test line with a newline character.\n
-Another line follows here.\n
-The quick brown fox jumps over the lazy dog.
-End of the file.
