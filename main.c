@@ -1,14 +1,13 @@
+#include "get_next_line.h"
+
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-char    *get_next_line(int fd);
 
 int main(int argc, char **argv)
 {
     int     fd;
     char    *line;
-    int     line_count = 0;
 
     // Open file or use standard input (fd = 0)
     if (argc == 2)
@@ -25,12 +24,11 @@ int main(int argc, char **argv)
         fd = 0; // Use stdin if no file is specified
     }
 
-    // Read and print only the first 5 lines
-    while (line_count < 5 && (line = get_next_line(fd)) != NULL)
+    // Read and print lines using get_next_line
+    while ((line = get_next_line(fd)) != NULL)
     {
         printf("%s", line);
         free(line);
-        line_count++;
     }
 
     // Close file if it was opened
@@ -39,4 +37,3 @@ int main(int argc, char **argv)
 
     return (0);
 }
-
